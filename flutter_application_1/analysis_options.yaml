@@ -1,0 +1,30 @@
+# analysis_options.yaml
+# Este archivo configura el analyzer, que estadísticamente analiza el código Dart para
+# 
+# * chequear errores, warnings y lints.
+# 
+# Los issues identificados por el analyzer son mostrados en la UI de Dart-enabled
+# IDEs (https://dart.dev/guides/tools/ref-editors). El analyzer también puede ser
+# invocado desde la línea de comandos ejecutando `flutter analyzer`.
+# 
+# El siguiente linter activa un conjunto de reglas de lints recomendadas para apps Flutter.
+# Se recomienda encarecidamente para buenas prácticas de codificación.
+include: package:flutter_lints/flutter.yaml
+
+# Configuración del Analyzer (si es necesaria)
+analyzer:
+  # Elimina el bloque 'error:' que estaba causando el problema.
+  # Agrega esta sección para ignorar advertencias de paquetes específicos si es necesario:
+  # exclude:
+  #   - 'lib/models/**.dart'
+    
+# Configuración de Reglas de Linter
+linter:
+  rules:
+    # CORRECCIÓN: Coloca la regla aquí, donde pertenece.
+    # El valor 'error' no es necesario; la presencia de la regla la habilita.
+    use_build_context_synchronously: true 
+    
+    # Aquí puedes añadir más reglas personalizadas, por ejemplo:
+    # prefer_single_quotes: true
+    # avoid_print: true
