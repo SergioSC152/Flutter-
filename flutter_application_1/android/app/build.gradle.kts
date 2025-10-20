@@ -9,11 +9,10 @@ plugins {
 }
 
 android {
-    namespace = "com.example.flutter_application_1"
-    
-    // CORRECCIÓN: 'V' en Version debe ser minúscula para Kotlin DSL de Flutter.
-    compileSdk = flutter.compileSdkVersion 
-    
+    namespace = "com.example.apk_cowapp"
+
+    compileSdk = flutter.compileSdkVersion
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -24,24 +23,17 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.flutter_application_1"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion // Usar la propiedad de Flutter es más estándar
-        
-        // CORRECCIÓN: 'V' en Version debe ser minúscula
-        targetSdk = flutter.targetSdkVersion 
-        
-        // CORRECCIÓN: Se requiere la propiedad (property) para que funcione en KTS.
-        versionCode = flutter.versionCode.toInt() 
-        versionName = flutter.versionName.toString()
+    applicationId = "com.example.apk_cowapp"
+    minSdk = 23
+    targetSdk = flutter.targetSdkVersion
+    versionCode = flutter.versionCode.toInt()
+    versionName = flutter.versionName.toString()
+    multiDexEnabled = true
     }
+
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
         }
     }
@@ -49,4 +41,11 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // Firebase core
+    implementation("com.google.firebase:firebase-bom:33.1.2")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth")
 }

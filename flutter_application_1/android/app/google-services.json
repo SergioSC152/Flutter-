@@ -1,26 +1,45 @@
 {
   "project_info": {
-    "project_number": "814284364700",
-    "project_id": "cowapp0",
-    "storage_bucket": "cowapp0.firebasestorage.app"
+    "project_number": "823311226387",
+    "firebase_url": "https://datacowapp-default-rtdb.firebaseio.com",
+    "project_id": "datacowapp",
+    "storage_bucket": "datacowapp.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:814284364700:android:95cb793254d8ef63fac659",
+        "mobilesdk_app_id": "1:823311226387:android:6364ece6e070f52f4ad1e6",
         "android_client_info": {
-          "package_name": "com.example.flutter_application_1"
+          "package_name": "com.example.apk_cowapp"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "823311226387-4u3jbaeapcsl95of5p62dq93etrakn5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apk_cowapp",
+            "certificate_hash": "9b3681279163483df773b23930fcb480c6f46b30"
+          }
+        },
+        {
+          "client_id": "823311226387-23lvd1lvlm93990h8ic6fh53i2b4qnn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDw9IqZEHWvApSWDoAuHrE1TprXRsFSKQM"
+          "current_key": "AIzaSyA8egttWgHAWwHOZKamr6v3ZfHPrihDVfc"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823311226387-23lvd1lvlm93990h8ic6fh53i2b4qnn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
